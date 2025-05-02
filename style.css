@@ -16,6 +16,16 @@ Text Domain: club-voyage
 /* Variables */
 /* Base */
 /* Layout */
+html {
+  box-sizing: border-box;
+}
+
+*,
+*:before,
+*:after {
+  box-sizing: inherit;
+}
+
 * {
   border: 1px solid #ccc;
 }
@@ -32,8 +42,23 @@ body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  max-width: 1000px;
+  max-width: 900px;
   margin: 0 auto;
 }
 
-/* Composants *//*# sourceMappingURL=style.css.map */
+/* Composants */
+/**
+/////////////////////////////// Composant .recherche
+*/
+.recherche {
+  border: 1px solid #aaa;
+  display: flex;
+  align-items: center;
+}
+.recherche__input {
+  border: none;
+  outline: none;
+}
+.recherche__bouton {
+  border-left: 1px solid #aaa;
+}/*# sourceMappingURL=style.css.map */
