@@ -16,6 +16,65 @@ Text Domain: club-voyage
 /* Variables */
 /* Base */
 /* Layout */
+/* Layout .entete */
+.chk__menu {
+  display: none;
+}
+
+.chk__menu:checked ~ .entete__nav {
+  display: flex;
+  flex-direction: column;
+}
+.chk__menu:checked ~ .entete__nav .entete__menu {
+  flex-direction: column;
+}
+
+.entete {
+  background-color: blanchedalmond;
+}
+.entete__contenu {
+  display: flex;
+  justify-content: space-between;
+}
+.entete__logo {
+  width: 75px;
+  height: 75px;
+}
+.entete__nav {
+  display: flex;
+  justify-content: flex-end;
+  flex-wrap: wrap;
+  margin: 0 2rem 0 auto;
+}
+@media screen and (max-width: 600px) {
+  .entete__nav {
+    display: none;
+  }
+}
+.entete__burger {
+  display: none;
+}
+@media screen and (max-width: 600px) {
+  .entete__burger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+.entete__menu {
+  display: flex;
+  list-style-type: none;
+  gap: 1rem;
+}
+.entete__menu-item a {
+  display: block;
+  background-color: beige;
+}
+.entete__menu-item a:hover {
+  background-color: rgb(233, 227, 177);
+}
+
 html {
   box-sizing: border-box;
 }
@@ -46,10 +105,18 @@ body {
   margin: 0 auto;
 }
 
+.hero {
+  background-image: url("images/acores.jpg");
+  background-position: center;
+  background-size: cover;
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+}
 /* Composants */
-/**
-/////////////////////////////// Composant .recherche
-*/
+/* Composant .recherche */
 .recherche {
   border: 1px solid #aaa;
   display: flex;
