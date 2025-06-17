@@ -5,7 +5,7 @@
  * Représente le modèle par défaut
  */
 
-?>More actions
+?>
 
 <?php get_header() ?>
 <h1>trace seulement à retirer -------------- 404.php -----------</h1>

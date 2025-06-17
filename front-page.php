@@ -2,7 +2,7 @@
 
 /**
  * Le modèle  front-page
- * Permet d'afficher la page d'accueil More actions
+ * Permet d'afficher la page d'accueil
  */
 ?>
 
@@ -26,26 +26,15 @@
                 /* affiche l'image « mise en avant » miniature */
                 the_post();
         ?>
-                <p><?php
-                    if (in_category('galerie')) {
-                        echo "<article class='conteneur__galerie'>";
-                        the_content();
-                        echo "</article>";
-                    } else {  ?>
-
-                <article class="conteneur__carte">
-                    <?php the_post_thumbnail('thumbnail'); ?>
-                    <h2><?php
-                        /* affiche le titre pricipal du « post » */
-                        the_title(); ?></h2>
                     <?php
+                    if (in_category('galerie')) {
+                        get_template_part("gabarit/galerie");
+                    } else {
+                        get_template_part("gabarit/carte");
+                    ?>
 
-                        $lien = "<a href=" . get_permalink() . ">Suite</a>";
-                        echo wp_trim_words(get_the_excerpt(), 10, $lien);
-                    //wp_trim_words()
-                    } ?></p>
-                </article>
         <?php }
+            }
         } ?>
     </div>
 </section>

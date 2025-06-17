@@ -27,7 +27,7 @@ add_action('wp_enqueue_scripts', 'theme_tp_enqueue_styles');
  * Modifie la requete principale de WordPress avant qu'elle soit exécuté
  * le hook « pre_get_posts » se manifeste juste avant d'exécuter la requête principal
  * Dépendant de la condition initiale on peut filtrer un type particulier de requête
- * Dans ce cas ci nous filtrons la requête de la page d'accueilMore actions
+ * Dans ce cas ci nous filtrons la requête de la page d'accueil
  * @param WP_query  $query la requête principal de WP
  */
 function modifie_requete_principal($query)

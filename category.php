@@ -1,7 +1,7 @@
 <?php
 
 /**
- * le modèle indexMore actions
+ * le modèle index
  * Représente le modèle par défaut
  */
 
