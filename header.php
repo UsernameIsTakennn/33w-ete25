@@ -30,7 +30,7 @@
 
             <input type="checkbox" class="chk__menu" id="chk__menu" />
             <nav class="entete__nav">
-                    <!-- ul class="entete__menu">
+                <!-- ul class="entete__menu">
                     <li class="entete__menu-item"><a href="#">Aventure</a></li>
                     <li class="entete__menu-item"><a href="#">Culturel</a></li>
                     <li class="entete__menu-item"><a href="#">Zen</a></li>
@@ -39,22 +39,14 @@
                     <li class="entete__menu-item"><a href="#">Repos</a></li>
                 </ul -->
 
-                    <?php wp_nav_menu(array(
-                        "menu" => "principal",
-                        'container'            => '',
-                        'container_class'      => '',
-                        'menu_class'           => 'entete__menu',
+                <?php wp_nav_menu(array(
+                    "menu" => "principal",
+                    'container'            => '',
+                    'container_class'      => '',
+                    'menu_class'           => 'entete__menu',
 
-                    )); ?>
+                )); ?>
 
-                    <form class="recherche" action="">
-                        <input class="recherche__input" type="search" name="" id="" />
-                        <button class="recherche__bouton">
-                            <img
-                                src="https://s2.svgbox.net/hero-solid.svg?ic=search&color=000"
-                                width="32"
-                                height="32" />
-                        </button>
-                    </form>
+                <?php get_search_form() ?>
             </nav>
         </div>
