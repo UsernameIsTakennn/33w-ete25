@@ -8,7 +8,7 @@
 ?>
 
 <?php get_header() ?>
-<h1>trace seulement à retirer -------------- index.php -----------</h1>
+<h1>trace seulement à retirer -------------- category.php -----------</h1>
 <section class="populaire">
     <?php if (have_posts()) {
         while (have_posts()) {
@@ -16,11 +16,11 @@
             the_post();
             the_post_thumbnail('thumbnail');
     ?>
-        <h1><?php
-            /* affiche le titre pricipal du « post » */
-            the_title(); ?></h1>
+            <h1><?php
+                /* affiche le titre pricipal du « post » */
+                the_title(); ?></h1>
 
-<?php
+    <?php
             /* cette fontion permet d'afficher l'ensemble du contenu du post (article ou page)*/
             the_content();
         }
