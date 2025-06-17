@@ -6,3 +6,6 @@
 
 #### Adresse de la github-page
 https://usernameistakennn.github.io/33w-ete25/
+
+Adresse du site distant sur WHC:More actions
+https://gftnth00.mywhc.ca/33we10/
