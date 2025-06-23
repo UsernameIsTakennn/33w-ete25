@@ -1,11 +1,12 @@
 # TP1 - Site de voyage
 
-### Première étape de développement d'un thème WP
+### Première étape du développement d'un thème WP
 
-#### Auteur : Splenderly Jean Louis
+#### Auteur : Eddy Martin
 
 #### Adresse de la github-page
-https://usernameistakennn.github.io/33w-ete25/
+
+https://eddytuto.github.io/33w-ete-25/
 
 Adresse du site distant sur WHC:
-https://gftnth00.mywhc.ca/33we10/
+https://gftnth00.mywhc.ca/33we0/

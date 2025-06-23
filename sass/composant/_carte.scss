@@ -1,16 +1,31 @@
 .conteneur {
     display: flex;
     flex-wrap: wrap;
-    // gap: 25px;
+    gap: 25px;
 
     &__carte {
+        background-color: var(--beige);
+        color: var(--bleu-fonce);
         display: flex;
-        justify-content: space-between;
         flex-direction: column;
         justify-content: space-between;
         flex: 1 0 300px;
-        border: 1px solid #aaa;
+        border: 1px solid var(--brun);
+        border-radius: 11px;
         padding: 10px;
+        box-shadow: 5px 5px 2.5px var(--brun);
+        transition: 325ms ease-in-out;
+
+        a{
+            display: flex;
+            justify-content: flex-end;
+        }
+
+        &:hover{
+            background-color: var(--bleu-pale);
+            box-shadow: 5px 5px 2.5px var(--vert-fonce);
+            transform: scale(1.1);
+        }
     } 
     &__galerie {
         flex: 1 0 100%;

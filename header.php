@@ -17,7 +17,6 @@
 <body>
     <header class="entete">
         <div class="entete__contenu">
-            <!-- img src="images/logo.png" alt="" class="entete__logo" / -->
             <figure class="entete__logo">
                 <?= get_custom_logo(); ?>
             </figure>
@@ -30,23 +29,14 @@
 
             <input type="checkbox" class="chk__menu" id="chk__menu" />
             <nav class="entete__nav">
-                <!-- ul class="entete__menu">
-                    <li class="entete__menu-item"><a href="#">Aventure</a></li>
-                    <li class="entete__menu-item"><a href="#">Culturel</a></li>
-                    <li class="entete__menu-item"><a href="#">Zen</a></li>
-                    <li class="entete__menu-item"><a href="#">Sport</a></li>
-                    <li class="entete__menu-item"><a href="#">Croisière</a></li>
-                    <li class="entete__menu-item"><a href="#">Repos</a></li>
-                </ul -->
 
                 <?php wp_nav_menu(array(
                     "menu" => "principal",
                     'container'            => '',
                     'container_class'      => '',
-                    'menu_class'           => 'entete__menu',
-
+                    'menu_class'           => 'entete__menu'
                 )); ?>
-
                 <?php get_search_form() ?>
             </nav>
         </div>
+    </header>

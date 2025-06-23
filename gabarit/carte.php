@@ -9,5 +9,5 @@ $lien = "<a href=" . get_permalink() . ">Suite</a>";
 <article class="conteneur__carte">
     <?php the_post_thumbnail('miniature'); ?>
     <h2><?php the_title(); ?></h2>
-    <p><?php echo wp_trim_words(get_the_excerpt(), 10, $lien); ?></p>
+    <p><?php echo wp_trim_words(get_the_excerpt(), 26, $lien); ?></p>
 </article>

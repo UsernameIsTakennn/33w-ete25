@@ -1,15 +1,51 @@
 /* Composant .recherche */
 .recherche {
-    border: 1px solid #aaa;
+    background-color: var(--beige);
+    height: 30px;
+    border-radius: 30px;
     display: flex;
     align-items: center;
+    align-self: center;
 
-    &__input {
+    &__input{
         border: none;
         outline: none;
+        background: none;
+        float: left;
+        padding: 2px;
+        color: var(--brun-orange);
+        font-size: 16px;
+        transition: 0.4s;
+        line-height: 30px;
+        width:0px;
     }
 
-    &__bouton {
-        border-left: 1px solid #aaa;
+    &__bouton{
+        float: right;
+        width: 30px;
+        height: 30px;
+        border-radius: 50%;
+        background: var(--beige);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        transition: 0.4s;
+        border: none;
+    }
+}
+
+.recherche:hover .recherche__input {
+    width: 240px;
+    padding: 0 6px;
+}
+
+.recherche:hover>.recherche__bouton {
+    background: var(--beige-muted);
+}
+
+@media screen and (max-width: 1105px) {
+    .recherche:hover .recherche__input {
+        width: 125px;
+        padding: 0 6px;   
     }
 }

@@ -16,10 +16,10 @@ Text Domain: club-voyage
 
 /* Variables */
 @import "variable/dimension";
-// @import "variable/couleurs";
+@import "variable/couleur";
 
 /* Base */
-// @import "base/titre";
+@import "base/titre.scss";
 
 /* Layout */
 @import "layout/entete";
